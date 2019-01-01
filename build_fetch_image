@@ -1,0 +1,4 @@
+#!/bin/sh
+
+docker build -t jetware/base_fetch fetch
+docker push jetware/base_fetch

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+for i in oses/*; do
+	[ -d $i ] || continue
+	docker build -t jetware/base_os:${i#*/} $i
+	docker push jetware/base_os:${i#*/}
+done
+
