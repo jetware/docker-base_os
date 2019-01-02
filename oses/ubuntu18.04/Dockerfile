@@ -1,4 +1,5 @@
 FROM ubuntu:18.04
+LABEL org.jetware.base_os="ubuntu" org.jetware.base_os.version="18.04"
 RUN \
   echo "tzdata tzdata/Areas select Etc" | debconf-set-selections; \
   echo "tzdata tzdata/Zones/Etc select Universal" | debconf-set-selections; \
