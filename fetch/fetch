@@ -8,7 +8,7 @@ fi
 OWNER=$1 NAME=$2 VERSION=$3
 
 : ${JET_ROOT:=/jet}
-: ${DOWNLOAD_URL:="https://jetware.io/appliances/$OWNER/$NAME-$VERSION/download/installer:nub_tgz"}
+: ${DOWNLOAD_URL:="http://jetware.io/appliances/$OWNER/$NAME-$VERSION/download/installer:nub_tgz"}
 : ${PACKAGER_URL_PREFIX:='http://download.jetware.org/packager/'}
 : ${DESTDIR:=$JET_ROOT}
 : ${JET_USER:=jet}
